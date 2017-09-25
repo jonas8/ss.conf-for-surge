@@ -2,7 +2,7 @@
 bypass-system = true
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
-dns-server = 114.114.114.114, 114.114.115.115
+dns-server = 114.114.114.114, 8.8.8.8
 loglevel = notify
 
 __Proxy__
@@ -82,9 +82,8 @@ IP-CIDR,67.202.0.0/18,Proxy
 
 
 
-FINAL,ChinaProxy
+FINAL,🇨🇳Proxy
 
- [URL Rewrite]
- ^http://www.google.cn http://www.google.com.hk
- ^http://m.baidu.com/s\?from=1099b&word= http://google.com/search\?q=
- ^http://www.baidu.com/s\?wd= http://google.com/search\?q=
+[URL Rewrite]
+^http://www.google.cn http://www.google.com.hk
+^http://www.baidu.com http://www.google.com.hk

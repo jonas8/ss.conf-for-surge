@@ -40,7 +40,7 @@ def whiteListCheck():
         
         domain = re.findall(r'\w+\.\w+', line)
         if len(domain) > 0:
-            whitelistTxt.write('DOMAIN-SUFFIX,%s,ChinaProxy\n'%(domain[0]))
+            whitelistTxt.write('DOMAIN-SUFFIX,%s,🇨🇳Proxy\n'%(domain[0]))
 
     whitelist.close()
     whitelistTxt.close()
